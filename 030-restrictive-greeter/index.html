@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restrictive greeter</title>
+</head>
+<body>
+<h1>Restrictive greeter</h1>
+
+<p>Add the JS code to the <code>script.js</code> file.</p>
+
+<ol>
+    <li>When you click the button the browser should ask you for your name. Use the <code>prompt()</code> function to do
+        that.</li>
+    <li>Only the names "Bob" or "Marie" are allowed! Watch out for case sensitivity: "bob", "MARie", "bOB" should all be
+        valid inputs!</li>
+    <li>The output should be like: <code>Welcome NAME!</code>. Example: The user enters "Marie" the output should be
+        "Welcome Marie!"</li>
+    <li>Make sure that the names are transformed to a capital starting letter followed by lower case letters: "BOB" -->
+        "Bob", "marie" --> "Marie". <b>Find a way to do that</b>. Create a function that takes the name (like "BOB") and returns the modified wellformed name ("Bob") as a return value.</li>
+    <li>If a forbidden name is entered the output should be "Forbidden name: NAME!"</li>
+</ol>
+<button id="button">Click me!</button>
+
+<div id="output"></div>
+
+<div>
+    <h3>Resources</h3>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt">Documentation of prompt()</a></p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase">Documentation
+        of toLowerCase()</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
