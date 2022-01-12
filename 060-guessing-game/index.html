@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        const name = 'Guessing game'
+        document.write('<title>' + name + '</title>')
+    </script>
+</head>
+<body>
+<h1><script>document.write(name)</script></h1>
+
+<p>Add the JS code to the <code>script.js</code> file.</p>
+
+<ol>
+    <li>When the user clicks the button the system picks a random number between 0 and 100</li>
+    <li>Now the user must guess the number via <code>prompt()</code>-inputs</li>
+    <li>If the number is too big or too small the user will get a corresponding hint, like "Number too big" or "Number too small" via <code>alert()</code></li>
+    <li>The game ends when the user guesses the right number</li>
+    <li>The game should present the statistics of the game round in the <code>div#output</code> element</li>
+    <li>It must contain all guesses and the number of total guesses needed</li>
+</ol>
+
+<blockquote>
+    <h3>Example</h3>
+
+    <p>System picks the number 5</p>
+
+    <code>
+        <pre>
+User input via prompt = 10
+Alert shown: Number too big.
+
+User input via prompt = 2
+Alert shown: Number too small.
+
+User input via prompt = 6
+Alert shown: Number too big.
+
+User input via prompt = 5
+Alert shown: WINNER! The Number was 5
+
+Output:
+1) 10
+2) 2
+3) 6
+4) 5
+Total guesses needed: 4
+        </pre>
+    </code>
+</blockquote>
+
+<button id="button">Click me!</button>
+
+<div id="output"></div>
+
+<div>
+    <h3>Resources</h3>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt">Documentation of prompt()</a></p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/alert">Documentation of alert()</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

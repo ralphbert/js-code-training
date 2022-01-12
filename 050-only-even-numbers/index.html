@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Number printer</title>
+    <script>
+        const name = 'Only Even Numbers'
+        document.write('<title>' + name + '</title>')
+    </script>
 </head>
 <body>
-<h1>Number printer</h1>
+<h1><script>document.write(name)</script></h1>
 
 <p>Add the JS code to the <code>script.js</code> file.</p>
 
@@ -15,7 +18,8 @@
         was wrong
     </li>
     <li>If the number is greater than 100 set it to a maximum of 100. <b>Use Math.max() to do that</b></li>
-    <li>Print all numbers to the div with the id named <code>output</code> from 1 to n.</li>
+    <li>Print all <b>even numbers</b> to the div with the id named <code>output</code> between 1 to n.</li>
+    <li>Use the <code>modulo operator "%"</code> to solve the exercise</li>
 </ol>
 
 <blockquote>
@@ -23,12 +27,10 @@
 
     <code>
         <pre>
-Input = 5
-1
+Input = 7
 2
-3
 4
-5
+6
         </pre>
     </code>
 </blockquote>
@@ -44,6 +46,8 @@ Input = 5
     <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min">Documentation of Math.min()</a></p>
     <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim">Documentation
         of trim()</a></p>
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder">Documentation
+        of Modulo operator</a></p>
 </div>
 
 <script src="script.js"></script>
